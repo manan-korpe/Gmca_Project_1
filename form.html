@@ -8,17 +8,15 @@
 </head>
 
 <body>
-    <center>
-        <h2>Job Application Form</h2>
-    </center>
+    <h2>Job Application Form</h2>
     <hr>
     <form>
         <fieldset>
             <legend>Personal Details :</legend>
-            <label for="fname">First Name</label>
+            <label for="fname">First Name:</label>
             <input type="text" id="fname" name="fname" placeholder="first name" />
             <br />
-            <label for="lname">Last Name</label>
+            <label for="lname">Last Name:</label>
             <input type="text" id="lname" name="lname" placeholder="last name" />
             <br />
             <label for="dob">DOB</label>
@@ -34,6 +32,8 @@
                 <input type="radio" id="marital" name="marital" value="married" /><label for="dob">married</label>
                 <input type="radio" id="marital" name="marital" value="Unmarried" /><label for="dob">Unmarried</label>
             </div>
+            <label for="nationality">Nationality</label>
+            <input type="text" id="nationality" name="nationality" placeholder="nationality" />
         </fieldset>
 
         <fieldset>
@@ -58,21 +58,74 @@
                 <option value="graduation">Graduation</option>
                 <option value="postGraduation">Post-Graduation</option>
             </select>
+            <br />
+            <span>Field Of Study :</span>
+            <input type="radio" name="fieldofstudy" id="arts"><lable for="arts">Arts</lable>
+            <input type="radio" name="fieldofstudy" id="commerce"><lable for="commerce">Commerce</lable>
+            <input type="radio" name="fieldofstudy" id="science"><lable for="science">Science</lable>
             <br/>
-            <label for="marks">Marks</label>
-            <input text="text" name="marks" id="marks"/>
+            <label for="university-institution-name">University/Institution Name :</label>
+            <input text="text" name="universityinstitutionname" id="university-institution-name" />
         </fieldset>
+
         <fieldset>
             <legend>Work Experience :</legend>
-            <label>Work Experience in Year</label>
-            <br/>
-            <label for="fname">Last Company Name :</label>
-            <input type="text" id="Company" name="Company" placeholder="Company name" />
-        </fieldset>  
+            <label for="job-experience-year">Work Experience in Year</label>
+            <input type="number" name="experienceyear" id="job-experience-year" value="0" />
+            <br />
+            <label for="job-previous">Previous Job Titles :</label>
+            <input type="text" id="job-previous" name="previousjob" placeholder="company name" />
+            <br />
+            <label for="job-company">Previous Company Name :</label>
+            <input type="text" id="job-company" name="company" placeholder="company name" />
+            <br />
+            <lable for="job-Previous-salary">Previous Salary</lable>
+            <input type="number" name="previoussalary" id="job-previous-salary" min="0" />
+            <div>
+                <span>Relevant Skill: </span>
+                <input type="checkbox" id="skill-communication" name="skill" value="communication"><label
+                    for="skill-communication">Communication</label>
+                <input type="checkbox" id="skill-problemsolving" name="skill" value="problemsolving"><label
+                    for="skill-problemsolving">Problem Solving</label>
+                <input type="checkbox" id="skill-leadership" name="skill" value="leadership"><label
+                    for="skill-leadership">leadership</label>
+                <input type="checkbox" id="skill-timemanagement" name="skill" value="timemanagement"><label
+                    for="skill-timemanagement">Time Management</label>
+                <input type="checkbox" id="skill-dataanalysis" name="skill" value="dataanalysis"><label
+                    for="skill-dataanalysis">Data Analysis</label>
+                <input type="checkbox" id="skill-customerservice" name="skill" value="customerservice"><label
+                    for="skill-customerservice">Customer Service</label>
+            </div>
+        </fieldset>
 
-
-
-            <button>Apply</button>
+        <fieldset>
+            <legend>Job-Related Details :</legend>
+            <label for="job-position">Postion:</label>
+            <select name="jobposition" id="job-position">
+                <option selected disabled>Position</option>
+                <option value="preojectmanager">Preoject Manager</option>
+                <option value="businessanalyst">Business Analyst</option>
+                <option value="marketingmanager">Marketing Manager</option>
+                <option value="seniordeveloper">Senior Developer</option>
+            </select>
+            <br />
+            <label for="job-location">Location:</label>
+            <select name="joblocation" id="job-location">
+                <option selected disabled>Location</option>
+                <option value="ahmedabad">Ahmedabad</option>
+                <option value="pune">Pune</option>
+                <option value="delhi">Delhi</option>
+                <option value="mumbai">Mumbai</option>
+            </select>
+            <br />
+            <label for="start-date">Available Start Date</label>
+            <input type="date" name="startdate" id="start-date" />
+            <br />
+            <lable for="job-expected-salary">Expected Salary</lable>
+            <input type="number" name="jobexpectedsalary" id="job-expected-salary" min="0" />
+        </fieldset>
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
     </form>
 
 </body>
