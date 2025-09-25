@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <center>
+        <h2>Job Application Form</h2>
+    </center>
+    <hr>
+    <form>
+        <fieldset>
+            <legend>Personal Details :</legend>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname" placeholder="first name" />
+            <br />
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lname" placeholder="last name" />
+            <br />
+            <label for="dob">DOB</label>
+            <input type="date" id="dob" name="dob" />
+            <br />
+            <div>
+                <span for="gender">Gender:</span>
+                <input type="radio" value="male" name="gender" id="male" /> <label for="male">Male</label>
+                <input type="radio" value="female" name="gender" id="female" /> <label for="male">Female</label>
+            </div>
+            <div>
+                <label for="marital">Marital Status</label>
+                <input type="radio" id="marital" name="marital" value="married" /><label for="dob">married</label>
+                <input type="radio" id="marital" name="marital" value="Unmarried" /><label for="dob">Unmarried</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Contact Details :</legend>
+            <label for="mobile">Mobile No.</label>
+            <input type="text" id="mobile" name="mobile" placeholder="mobile number" />
+            <br />
+            <label for="email">Email id:</label>
+            <input type="email" id="email" name="email" placeholder="email" />
+            <br />
+            <label for="address">Address:</label>
+            <br />
+            <textarea rows="5" cols="40" placeholder="Address" id="address" name="address"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Educational Details :</legend>
+            <select>
+                <option selected disabled>Education</option>
+                <option value="10">10th passed</option>
+                <option value="12">12th Passed</option>
+                <option value="graduation">Graduation</option>
+                <option value="postGraduation">Post-Graduation</option>
+            </select>
+            <br/>
+            <label for="marks">Marks</label>
+            <input text="text" name="marks" id="marks"/>
+        </fieldset>
+        <fieldset>
+            <legend>Work Experience :</legend>
+            <label>Work Experience in Year</label>
+            <br/>
+            <label for="fname">Last Company Name :</label>
+            <input type="text" id="Company" name="Company" placeholder="Company name" />
+        </fieldset>  
+
+
+
+            <button>Apply</button>
+    </form>
+
+</body>
+
+</html>
