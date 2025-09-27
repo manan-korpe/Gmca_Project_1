@@ -26,6 +26,7 @@ form{
     border-radius: 4px;
 }
 input{
+    text-align:end;
     letter-spacing: 1px;
     margin-bottom: 12px;
     padding: 8px;
@@ -33,7 +34,7 @@ input{
     border:none;
     box-shadow: 0px 2px 2px var(--light-black) ;
 }
-input:focus{
+.input:focus{
     outline: 0;
 }
 table{
